@@ -1,4 +1,4 @@
-package queztestings;
+package testings;
 
 public class Test_01 {
 

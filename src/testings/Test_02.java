@@ -1,4 +1,4 @@
-package queztestings;
+package testings;
 
 import java.util.Optional;
 
