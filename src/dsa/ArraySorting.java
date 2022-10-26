@@ -37,5 +37,26 @@ public class ArraySorting {
             System.out.println(myArray[i]);
         }
 
+        // insertion array
+        Integer[] array = new Integer[13];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i;
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+
+        // updating array
+        for (int i = 0; i < array.length; i++) {
+            if ( array[i] == 10 ) {
+                array[i] = 255;
+            }
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
