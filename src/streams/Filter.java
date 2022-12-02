@@ -1,7 +1,9 @@
 package streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class Filter {
 
@@ -33,5 +35,11 @@ public class Filter {
                 .min(Integer::compare)
                 .get();
         System.out.println(minNum);
+
+        // using PersonPopulate Class and get the List of Persons and find max value of them
+        Optional<Person> maxAgedPerson = PersonPopulate.getPersonPopulate()
+                .stream()
+                .max(Comparator.comparing(Person::getAge));
+        System.out.println(maxAgedPerson.toString());
     }
 }
