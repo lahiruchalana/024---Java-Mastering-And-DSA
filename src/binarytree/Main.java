@@ -17,5 +17,9 @@ public class Main {
         binaryTree.addValue(9);
 
         System.out.println("binaryTree ended the implementation!!");
+
+        System.out.println("-------------------------------------");
+
+        Traverse.getInOrderTraverse(binaryTree.root);
     }
 }
